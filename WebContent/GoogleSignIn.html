@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<!-- <meta name="google-signin-client_id"
+	content="976032729923-19rdkvq42c4tcfqqsl16n9e3oi0a87mg.apps.googleusercontent.com">
+ -->
+ <title>GoogleSignIn Page</title>
+</head>
+<!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+<script type="text/javascript">
+	/* function onSignIn(googleUser) {
+
+		var profile = googleUser.getBasicProfile();
+		console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		console.log('Name: ' + profile.getName());
+		console.log('Image URL: ' + profile.getImageUrl());
+		console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+		console.log(profile)
+		window.location.href = "profileInfo.html?Name=" + profile.getName()
+				+ "&Email=" + profile.getEmail();
+	} */
+</script>
+<body>
+	<!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+	<a	href="https://accounts.google.com/o/oauth2/auth?scope=profile email&redirect_uri=http://localhost:8080/IntellyzenTest/oauth2callback&response_type=code&client_id=12247240030-q78jafcsm35qh3ds0naa7musu0s0m3bf.apps.googleusercontent.com&approval_prompt=force"> Google Sign-in
+</a>
+</body>
+</html>
